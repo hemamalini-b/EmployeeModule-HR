@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 12px;
+    z-index: 2;
+}
+
+main{
+    margin-top: 46px;
+    width: 100%;
+    z-index: 1;
+}
+
+.tabs_container{
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.tabs_list{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.tab_customize_btn{
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.tabs_list > .tab_item{
+    list-style: none;
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+.active{
+    border-bottom: 2px solid #000;
+    font-weight: 700;
+}
+
+.tab_customize_btn{
+    color: #4f6af0;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.card_container{
+    margin: 16px 10px;
+}
+
+.card{
+    height: calc(100vh - 15px);
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+
+.card_body{
+    height: calc(100% - 50px);
+    width: 100%;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+}
+
+.card_body::-webkit-scrollbar {
+    width: 1px;
+    height: 5px;               /* width of the entire scrollbar */
+}
+  
+.card_body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+  
+.card_body::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 181, 189);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    /*border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+.card_tabs_list{
+    padding: 10px 16px;
+}
+
+.card_tab_item{
+    background: #d3d3d4;
+    font-size: 14px;
+    margin: 8px;
+}
+
+.card_form_group{
+    padding: 10px 14px;
+    margin: 5px;
+}
+
+.form-label{
+    display: block;
+    color: #626365bf;
+    font-size: 14px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 2px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.form-select{
+    display: block;
+    width: 100%;
+    padding: 4px 3px;
+}
+
+.form-col{
+    margin: 8px;
+}
+
+.avatar_img_section{
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;   
+    padding: 15px;
+    width: 120px;
+    /* height: 210px; */
+}
+
+.avatar_img_container{
+    height: 130px;
+    width: 130px;
+}
+
+.profile_img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.avatar_upload_btn_section{
+    /* width: calc(100% - 150px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avatar_upload_btn{
+    background: #a9aaadbf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.avatar_upload_btn_section > span{
+    font-size: 14px;
+    color: #626365bf;
+}
+
+.card_footer{
+    width: 100%;
+    background-color: #d3d3d4;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_btn_container > button{
+    margin-right: 10px;
+}
+
+.tab_active{
+    background: #969696;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 7px 14px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-secondary{
+    background: #6c757d;
+    color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    .w-sm {
+        max-width: 576px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .w-md {
+        max-width: 766px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .w-lg {
+        max-width: 992px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .w-xl {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .w-xxl {
+        max-width: 1400px;
+    }
+}
+
+/* Define the number of columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+  
+/* Define the width of each column */
+.col-1 { flex: 0 0 8.33%;  max-width: 8.33%; }
+.col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+.col-3 { flex: 0 0 25%;    max-width: 25%; }
+.col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+.col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+.col-6 { flex: 0 0 50%;    max-width: 50%; }
+.col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+.col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+.col-9 { flex: 0 0 75%;    max-width: 75%; }
+.col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+.col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+.col-12 { flex: 0 0 100%;   max-width: 100%; }
+  
+/* Responsive layout - makes a one column layout */
+@media (max-width: 576px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+}
+  
+/* Responsive layout - makes a two column layout */
+@media (min-width: 576px) {
+    .col-1 { flex: 0 0 8.33%;  max-width: 8.33%; }
+    .col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+    .col-3 { flex: 0 0 25%;    max-width: 25%; }
+    .col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+    .col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+    .col-6 { flex: 0 0 50%;    max-width: 50%; }
+    .col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+    .col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+    .col-9 { flex: 0 0 75%;    max-width: 75%; }
+    .col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+    .col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+    .col-12 { flex: 0 0 100%;   max-width: 100%; }
+}
+  

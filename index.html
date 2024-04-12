@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Qwik HR</title>
+</head>
+<body>
+    <header class="main_header">
+        <div class="title_section">
+            <h3 class="header_title">My Space</h3>
+        </div>
+    </header>
+
+    <main>
+        <section class="tabs_container w-sm w-md w-lg w-xl w-xxl">
+            <ul class="tabs_list">
+                <li class="tab_item active">Personal</li>
+                <li class="tab_item">Team</li>
+                <li class="tab_item">Job</li>
+                <li class="tab_item">Training</li>
+                <li class="tab_item">Assets</li>
+                <li class="tab_item">Notes</li>
+            </ul>
+            <div class="tab_customize_btn">
+                Customize Tabs
+            </div>
+        </section>
+
+        <section class="card_container w-sm w-md w-lg w-xl w-xxl">
+            <div class="card">
+                <div class="card_body">
+                    <div class="card_tabs_list">
+                        <button class="btn card_tab_item tab_active">Basic Info</button>
+                        <button class="btn card_tab_item">Contacts</button>
+                        <button class="btn card_tab_item">Family</button>
+                        <button class="btn card_tab_item">Education</button>
+                        <button class="btn card_tab_item">Work Experience</button>
+                        <button class="btn card_tab_item">Documents</button>
+                        <button class="btn card_tab_item">Benefits</button>
+                        <button class="btn card_tab_item">Health Record</button>
+                        <button class="btn card_tab_item">Travel</button>
+                    </div>
+                    
+                <!---------- BASIC INFO FORM START ------------------>
+                    <div class="card_form_group">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-3 form-col">
+                                        <label class="form-label">Employee ID</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-3 form-col">
+                                        <label class="form-label">Preferred Name</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-col col-3">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Middle Name </label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Date of Birth</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Age</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Nationality</label>
+                                        <select class="form-select">
+                                            <option value=""></option>
+                                            <option value="Ind">Indian</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Gender</label>
+                                        <select class="form-select">
+                                            <option value=""></option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Martial Status</label>
+                                        <select class="form-select">
+                                            <option value=""></option>
+                                            <option value="single">Single</option>
+                                            <option value="married">Married</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-col col-3">
+                                        <label class="form-label">Date of Marriage</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 avatar_img_section">
+                                <div class="avatar_img_container">
+                                    <img src="./avatar_picture.jpg" class="profile_img" alt="profile" />
+                                </div>
+                                <div class="avatar_upload_btn_section">
+                                    <button class="btn avatar_upload_btn">Upload</button>
+                                    <span>Supported only JPG, PNG, SVG</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-col col-3">
+                                <label class="form-label">T-Shirt Size</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------- BASIC INFO FORM END ------------------>
+                <div class="card_footer">
+                    <div class="footer_btn_container">
+                        <button class="btn btn-secondary">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
