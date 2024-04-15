@@ -1,0 +1,9 @@
+.section_header{
+    background-color: #d3d3d4;
+    border-radius: 3px;
+}
+
+.paddress_header_section{
+    display: flex;
+    align-items: center;
+}
