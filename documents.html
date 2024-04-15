@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/documents.css">
+    <title>Qwik HR</title>
+    <script src="https://kit.fontawesome.com/029e3174b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h3 class="header_title">My Space</h3>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="tabs_container">
+                <ul class="tabs_list">
+                    <li class="tab_item active">Personal</li>
+                    <li class="tab_item">Team</li>
+                    <li class="tab_item">Job</li>
+                    <li class="tab_item">Training</li>
+                    <li class="tab_item">Assets</li>
+                    <li class="tab_item">Notes</li>
+                </ul>
+                <div class="tab_customize_btn">
+                    Customize Tabs
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card">
+                <div class="card_body">
+                    <div class="card_tabs_list">
+                        <button class="btn card_tab_item"><a href="index.html">Basic Info</a></button>
+                        <button class="btn card_tab_item"><a href="contact.html">Contacts</a></button>
+                        <button class="btn card_tab_item">Family</button>
+                        <button class="btn card_tab_item">Education</button>
+                        <button class="btn card_tab_item">Work Experience</button>
+                        <button class="btn card_tab_item tab_active"><a href="documents.html">Documents</a></button>
+                        <button class="btn card_tab_item">Benefits</button>
+                        <button class="btn card_tab_item">Health Record</button>
+                        <button class="btn card_tab_item">Travel</button>
+                    </div>
+                    
+                <!---------- Document START ------------------>
+                    <div class="container">
+                        <div class="row px-3 document_container">
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 document_upload_section px-2 py-3">
+                                <div class="form-row pr-3">
+                                    <div class="form-group col-12 col-sm-12 col-md-12">
+                                        <label class="form-label">Document Type</label>
+                                        <select class="form-select my-2 py-2 px-2">
+                                            <option value="Education">Education</option>
+                                            <option value="Employment">Employment</option>
+                                            <option value="Signed_offer_letter">Signed Offer Letter</option>
+                                            <option value="resume">Resume</option>
+                                            <option value="identity_proof">Identity Proof</option>
+                                            <option value="agreements">Agreements</option>
+                                        </select>
+                                        <div class="upload-file-btn mt-1">
+                                            Upload Files
+                                            <input type="file" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-9 col-lg-9 px-2 py-3">
+                                <div class="accordion">
+                                    <div class="accordion_item">
+                                        <h4 class="accordion_header">
+                                            <div class="accordion_button collapsed">Education</div>
+                                            <span class="accordion_btn_icon"><i class="fa-solid fa-plus"></i></span>
+                                            <!-- <span class="accordion_btn_icon">&minus;</span> -->
+                                        </h4>
+                                        <div class="accordion_collapse show">
+                                            <div class="accordion_body row">
+                                                <div class="col-12 col-sm-12 col-md-12">
+                                                    <div class="row">
+                                                        <div class="document_wrapper col-12 col-sm-12 col-md-5 mr-3 mb-3">
+                                                            <span class="file_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                                            <div class="file_name_wrapper">
+                                                                <div class="file_name">
+                                                                    <div>Justin Passport.pdf</div>
+                                                                    <p>Type - Passport</p>
+                                                                </div>
+                                                                <span class="del_icon"><i class="fa-solid fa-trash"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="document_wrapper col-12 col-sm-12 col-md-5 mr-3 mb-3">
+                                                            <span class="file_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                                            <div class="file_name_wrapper">
+                                                                <div class="file_name">
+                                                                    <div>Justin Passport.pdf</div>
+                                                                    <p>Type - Passport</p>
+                                                                </div>
+                                                                <span class="del_icon"><i class="fa-solid fa-trash"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="document_wrapper col-12 col-sm-12 col-md-5 mr-3 mb-3">
+                                                            <span class="file_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                                            <div class="file_name_wrapper">
+                                                                <div class="file_name">
+                                                                    <div>Justin Passport.pdf</div>
+                                                                    <p>Type - Passport</p>
+                                                                </div>
+                                                                <span class="del_icon"><i class="fa-solid fa-trash"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="document_wrapper col-12 col-sm-12 col-md-5 mr-3 mb-3">
+                                                            <span class="file_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                                            <div class="file_name_wrapper">
+                                                                <div class="file_name">
+                                                                    <div>Justin Passport.pdf</div>
+                                                                    <p>Type - Passport</p>
+                                                                </div>
+                                                                <span class="del_icon"><i class="fa-solid fa-trash"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <h4 class="accordion_header">
+                                            <div class="accordion_button collapsed flex align-items-center">Employment <span class="info_tooltip mx-2">i</span></div>
+                                            <span class="accordion_btn_icon"><i class="fa-solid fa-plus"></i></span>
+                                            <!-- <span class="accordion_btn_icon">&minus;</span> -->
+                                        </h4>
+                                        <div class="accordion_collapse">
+                                            <div class="accordion_body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <h4 class="accordion_header">
+                                            <div class="accordion_button collapsed">Signed Offer Letter</div>
+                                            <span class="accordion_btn_icon"><i class="fa-solid fa-plus"></i></span>
+                                            <!-- <span class="accordion_btn_icon">&minus;</span> -->
+                                        </h4>
+                                        <div class="accordion_collapse">
+                                            <div class="accordion_body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <h4 class="accordion_header">
+                                            <div class="accordion_button collapsed">Resume</div>
+                                            <span class="accordion_btn_icon"><i class="fa-solid fa-plus"></i></span>
+                                            <!-- <span class="accordion_btn_icon">&minus;</span> -->
+                                        </h4>
+                                        <div class="accordion_collapse">
+                                            <div class="accordion_body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <h4 class="accordion_header">
+                                            <div class="accordion_button collapsed">Identity Proof</div>
+                                            <span class="accordion_btn_icon"><i class="fa-solid fa-plus"></i></span>
+                                            <!-- <span class="accordion_btn_icon">&minus;</span> -->
+                                        </h4>
+                                        <div class="accordion_collapse">
+                                            <div class="accordion_body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <h4 class="accordion_header">
+                                            <div class="accordion_button collapsed">Agreements</div>
+                                            <span class="accordion_btn_icon"><i class="fa-solid fa-plus"></i></span>
+                                            <!-- <span class="accordion_btn_icon">&minus;</span> -->
+                                        </h4>
+                                        <div class="accordion_collapse">
+                                            <div class="accordion_body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <h4 class="accordion_header">
+                                            <div class="accordion_button collapsed">Additional Documents</div>
+                                            <span class="accordion_btn_icon"><i class="fa-solid fa-plus"></i></span>
+                                            <!-- <span class="accordion_btn_icon">&minus;</span> -->
+                                        </h4>
+                                        <div class="accordion_collapse">
+                                            <div class="accordion_body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------- Document END ------------------>
+                <div class="card_footer">
+                    <div class="footer_btn_container">
+                        <button class="btn btn-secondary">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
