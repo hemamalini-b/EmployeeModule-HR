@@ -43,6 +43,18 @@ a{
     align-items: center;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
 .container{
     width:100%;
     padding-right:15px;
@@ -193,6 +205,13 @@ a{
     margin-bottom:1.2rem
 }
 
+.form-control-sm{
+    padding-right:0;
+    padding-left:0;
+    padding:.25rem .5rem;
+    font-size:.875rem;
+}
+
 /* The switch - the box around the slider */
 .form-switch {
     position: relative;
@@ -252,7 +271,57 @@ a{
     border-radius: 50%;
 }
 
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
 
+.table_responsive{
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.table > thead > tr{
+    width: 100%;
+    background: #d3d3d4;
+}
+
+.table th, td{
+    padding: 10px;
+    text-align: left;
+}
+
+.table > tbody > tr{
+    width: 100%;
+}
+
+tr > td{
+    border-bottom: 0.1rem solid rgb(190, 190, 190);
+}
+
+.table_icon{
+    background: #d3d3d4;
+    padding: 4px;
+    margin: 2px 4px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.table_responsive::-webkit-scrollbar {
+    width: 1px;
+    height: 0px;               /* width of the entire scrollbar */
+}
+  
+.table_responsive::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+  
+.table_responsive::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 181, 189);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    /*border: 3px solid orange;  /* creates padding around scroll thumb */
+}
 
 .upload-file-btn{
     position: relative;
@@ -464,8 +533,16 @@ a{
 .section_header{
     background-color: #d3d3d4;
     border-radius: 3px;
+    font-size: 14px;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.text-end{
+    text-align: end;
+}
 .m-0 {margin:0!important}
 .mt-0,.my-0 {margin-top:0!important}
 .mr-0,.mx-0 {margin-right:0!important}
