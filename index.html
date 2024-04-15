@@ -7,28 +7,30 @@
     <title>Qwik HR</title>
 </head>
 <body>
-    <header class="main_header">
-        <div class="title_section">
+    <header>
+        <div class="container">
             <h3 class="header_title">My Space</h3>
         </div>
     </header>
 
     <main>
-        <section class="tabs_container w-sm w-md w-lg w-xl w-xxl">
-            <ul class="tabs_list">
-                <li class="tab_item active">Personal</li>
-                <li class="tab_item">Team</li>
-                <li class="tab_item">Job</li>
-                <li class="tab_item">Training</li>
-                <li class="tab_item">Assets</li>
-                <li class="tab_item">Notes</li>
-            </ul>
-            <div class="tab_customize_btn">
-                Customize Tabs
+        <section class="container">
+            <div class="tabs_container">
+                <ul class="tabs_list">
+                    <li class="tab_item active">Personal</li>
+                    <li class="tab_item">Team</li>
+                    <li class="tab_item">Job</li>
+                    <li class="tab_item">Training</li>
+                    <li class="tab_item">Assets</li>
+                    <li class="tab_item">Notes</li>
+                </ul>
+                <div class="tab_customize_btn">
+                    Customize Tabs
+                </div>
             </div>
         </section>
 
-        <section class="card_container w-sm w-md w-lg w-xl w-xxl">
+        <section class="container">
             <div class="card">
                 <div class="card_body">
                     <div class="card_tabs_list">
@@ -44,43 +46,43 @@
                     </div>
                     
                 <!---------- BASIC INFO FORM START ------------------>
-                    <div class="card_form_group">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-8">
-                                <div class="row">
-                                    <div class="col-3 form-col">
+                            <div class="col-12 col-sm-12 col-md-8 px-2 mr-2">
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Employee ID</label>
                                         <input type="text" class="form-control" />
                                     </div>
-                                    <div class="col-3 form-col">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Preferred Name</label>
                                         <input type="text" class="form-control" />
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-col col-3">
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">First Name</label>
                                         <input type="text" class="form-control" />
                                     </div>
-                                    <div class="form-col col-3">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Middle Name </label>
                                         <input type="text" class="form-control" />
                                     </div>
-                                    <div class="form-col col-3">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Last Name</label>
                                         <input type="text" class="form-control" />
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-col col-3">
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Date of Birth</label>
                                         <input type="text" class="form-control" />
                                     </div>
-                                    <div class="form-col col-3">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Age</label>
                                         <input type="text" class="form-control" />
                                     </div>
-                                    <div class="form-col col-3">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Nationality</label>
                                         <select class="form-select">
                                             <option value=""></option>
@@ -88,8 +90,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-col col-3">
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Gender</label>
                                         <select class="form-select">
                                             <option value=""></option>
@@ -97,7 +99,7 @@
                                             <option value="female">Female</option>
                                         </select>
                                     </div>
-                                    <div class="form-col col-3">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Martial Status</label>
                                         <select class="form-select">
                                             <option value=""></option>
@@ -105,26 +107,37 @@
                                             <option value="married">Married</option>
                                         </select>
                                     </div>
-                                    <div class="form-col col-3">
+                                    <div class="form-group col-12 col-sm-12 col-md-4">
                                         <label class="form-label">Date of Marriage</label>
                                         <input type="text" class="form-control" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3 avatar_img_section">
-                                <div class="avatar_img_container">
-                                    <img src="./avatar_picture.jpg" class="profile_img" alt="profile" />
-                                </div>
-                                <div class="avatar_upload_btn_section">
-                                    <button class="btn avatar_upload_btn">Upload</button>
-                                    <span>Supported only JPG, PNG, SVG</span>
+                            <div class="col-12 col-sm-12 col-md-3 avatar_img_section ml-2 mr-1 mb-2">
+                                <div class="row px-3">
+                                    <div class="col-12">
+                                        <div class="avatar_img_container">
+                                            <img src="./avatar_picture.jpg" class="profile_img" alt="profile" />
+                                        </div>
+                                        <div class="avatar_upload_btn_section">
+                                            <div class="avatar_upload_btn">Upload</div>
+                                            <div class="help_text">Supported only JPG, PNG, SVG</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-col col-3">
-                                <label class="form-label">T-Shirt Size</label>
-                                <input type="text" class="form-control" />
+                            <div class="col-12 col-sm-12 col-md-4 px-2">
+                                <div class="form-row shirt_size_group">
+                                    <div class="form-group col-12 col-sm-12 col-md-6">                                  
+                                        <label class="form-label">T-Shirt Size</label>
+                                        <select class="form-select">
+                                            <option value="32">32</option>
+                                        </select>
+                                    </div>
+                                    <span>Size Chart</span>
+                                </div>
                             </div>
                         </div>
                     </div>
