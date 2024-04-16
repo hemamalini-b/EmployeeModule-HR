@@ -24,6 +24,7 @@ main{
     margin-top: 46px;
     width: 100%;
     z-index: 1;
+    margin-bottom: 16px;
 }
 
 a{
@@ -171,23 +172,28 @@ a{
     display: block;
     color: #626365bf;
     font-size: 14px;
+    padding-bottom: 0.2rem;
 }
 
 .form-control{
     display: block;
     width: 100%;
-    padding: 2px 3px;
+    padding: 4px 8px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    border: 1px solid grey;
+    border: 0.1rem solid rgb(160, 160, 160);
     border-radius: 3px;
 }
 
 .form-select{
     display: block;
     width: 100%;
-    padding: 4px 3px;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-size: 14px;
+    border: 0.1rem solid rgb(160, 160, 160);
+    border-radius: 3px;
 }
 
 .form-check{
@@ -212,29 +218,36 @@ a{
 }
 
 .form-control-sm{
-    padding-right:0;
-    padding-left:0;
     padding:.25rem .5rem;
     font-size:.875rem;
+    border: 0.1rem solid rgb(160, 160, 160);
+    border-radius: 3px;
 }
 
-/* The switch - the box around the slider */
-.form-switch {
+.form-select-sm{
+    padding-top:.25rem;
+    padding-bottom:.25rem;
+    padding-left:.5rem;
+    font-size:.875rem;
+    border: 0.1rem solid rgb(160, 160, 160);
+    border-radius: 3px;
+}
+
+.switch {
     position: relative;
     display: inline-block;
-    width: 42px;
-    height: 18px;
-    font-size: 14px;
-}
-
-/* Hide default HTML checkbox */
-.form-switch input {
+    width: 70px;
+    height: 28px;
+  }
+  
+  /* Hide the default checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-
-/* The slider */
+  
+  /* Style for the slider */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -242,40 +255,55 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    border: 1px solid gray;
     transition: .4s;
+    border-radius: 25px;
 }
-
+  
+  /* Style for the slider in checked state */
 .slider:before {
     position: absolute;
     content: "";
-    height: 12px;
-    width: 12px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
+    height: 20px;
+    width: 20px;
+    left: 8px;
+    bottom: 4px;
+    background-color: #ccc;
     transition: .4s;
-}
-
-.form-switch > input:checked + .slider {
-    background-color: #2196F3;
-}
-
-.form-switch > input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-.form-switch > input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
     border-radius: 50%;
+    z-index: 3;
+}
+  
+  /* Style for the checked state */
+.switch input:checked + .slider {
+    background-color: #6d6d6d;
+}
+  
+  /* Style for the checked state of the slider */
+.switch input:checked + .slider:before {
+    transform: translateX(34px);
+}
+  
+  /* Style for the labels */
+.label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    padding: 0 4px;
+    font-weight: 600;
+}
+  
+.check_label {
+    left: 5px;
+    z-index: 2;
+    color: #fff;
+}
+  
+.uncheck_label {
+    right: 5px;
+    z-index: 2;
+    color: #555;
 }
 
 .table{
@@ -395,6 +423,7 @@ tr > td{
     color: #8f8f8f;
     font-weight: 400;
 }
+
 .accordion_body{
     padding: 2px 0;
 }
@@ -452,16 +481,16 @@ tr > td{
 .avatar_img_section{
     background-color: #efefef;
     width: 90px;
-    height: 228px;
+    height: 260px;
 }
 
  .avatar_img_container{
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .profile_img{
@@ -472,7 +501,10 @@ tr > td{
 }
 
 .avatar_upload_btn_section{
+    width: 100%;
     text-align: center;
+    cursor: pointer;
+    margin: 8px 0;
 }
 
 .help_text{
