@@ -224,6 +224,7 @@ a{
     display: inline-block;
     width: 42px;
     height: 18px;
+    font-size: 14px;
 }
 
 /* Hide default HTML checkbox */
@@ -293,9 +294,15 @@ a{
     background: #d3d3d4;
 }
 
-.table th, td{
+.table th{
     padding: 10px;
     text-align: left;
+}
+
+.table td{
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 14px;
 }
 
 .table > tbody > tr{
@@ -309,8 +316,8 @@ tr > td{
 .table_icon{
     background: #d3d3d4;
     padding: 4px;
-    margin: 2px 4px;
     border-radius: 3px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -548,6 +555,10 @@ tr > td{
 
 .text-end{
     text-align: end;
+}
+
+.text-hidden{
+    opacity: 0;
 }
 .m-0 {margin:0!important}
 .mt-0,.my-0 {margin-top:0!important}
