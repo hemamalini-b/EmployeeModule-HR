@@ -149,6 +149,12 @@ a{
     padding: 10px 14px;
     margin: 5px;
 }
+.history-row{
+    width: 100%;
+    border-bottom: 0.1rem solid rgb(190, 190, 190);
+    padding: 10px;
+    font-size: 14px;
+}
 
 .form-row {
     display:flex;
