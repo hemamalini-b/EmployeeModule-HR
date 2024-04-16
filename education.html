@@ -37,72 +37,27 @@
                     <div class="card_tabs_list">
                         <button class="btn card_tab_item"><a href="index.html">Basic Info</a></button>
                         <button class="btn card_tab_item"><a href="contact.html">Contacts</a></button>
-                        <button class="btn card_tab_item">Family</button>
-                        <button class="btn card_tab_item"><a href="education.html">Education</a></button>
+                        <button class="btn card_tab_item"><a href="family.html">Family</a></button>
+                        <button class="btn card_tab_item tab_active"><a href="education.html">Education</a></button>
                         <button class="btn card_tab_item"><a href="work_experience.html">Work Experience</a></button>
                         <button class="btn card_tab_item"><a href="documents.html">Documents</a></button>
                         <button class="btn card_tab_item"><a href="benefits.html">Benefits</a></button>
                         <button class="btn card_tab_item"><a href="health_record.html">Health Record</a></button>
-                        <button class="btn card_tab_item tab_active"><a href="travel.html">Travel</a></button>
+                        <button class="btn card_tab_item"><a href="travel.html">Travel</a></button>
                     </div>
                     
-                <!---------- Travel START ------------------>
+                <!---------- Education START ------------------>
                     <div class="container">
-                        <div class="row px-2">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="form-row">
-                                    <div class="form-group col-12 col-sm-12 col-md-3">
-                                        <label class="form-label">Passport No.</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="form-group col-12 col-sm-12 col-md-3">
-                                        <label class="form-label">Issued By</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="form-group col-12 col-sm-12 col-md-3">
-                                        <label class="form-label">Date of Issue</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="form-group col-12 col-sm-12 col-md-3">
-                                        <label class="form-label">Date of Expiry</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row px-2">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="form-row">
-                                    <div class="form-group col-12 col-sm-12 col-md-3">
-                                        <label class="form-label">First Name</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="form-group col-12 col-sm-12 col-md-3">
-                                        <label class="form-label">Middle Name</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="form-group col-12 col-sm-12 col-md-3">
-                                        <label class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row px-2 my-3">
-                            <div class="section_header col-12 col-sm-12 col-md-12 col-lg-12 px-2 py-2">
-                                <h4 class="px-2">Visa Information</h4>
-                            </div>
-                        </div>
                         <div class="row table_responsive px-2">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Visa Number</th>
-                                            <th>Issued Date</th>
-                                            <th>Place of Issue</th>
-                                            <th>Expiry Date</th>
-                                            <th>Notes</th>
+                                            <th>Degree</th>
+                                            <th>Major</th>
+                                            <th>University</th>
+                                            <th>Year</th>
+                                            <th>CGPA</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -131,11 +86,70 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>03743567</td>
-                                            <td>Nov 24, 1963</td>
-                                            <td>Delhi</td>
-                                            <td>Nov 24, 1963</td>
-                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae!</td>
+                                            <td>B.Tech</td>
+                                            <td>IT</td>
+                                            <td>Anna University</td>
+                                            <td>Mar 25, 2024</td>
+                                            <td>Mar 25, 2027</td>
+                                            <td class="text-end">
+                                                <div class="flex flex-wrap justify-content-end">
+                                                    <span class="table_icon"><i class="fa-solid fa-pencil"></i></span>
+                                                    <span class="table_icon"><i class="fa-solid fa-trash-can"></i></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row px-2 my-3">
+                            <div class="section_header col-12 col-sm-12 col-md-12 col-lg-12 px-2 py-2">
+                                <h4 class="px-2">Certifications</h4>
+                            </div>
+                        </div>
+                        <div class="row table_responsive px-2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Issued by</th>
+                                            <th>Issued Date</th>
+                                            <th>Expiry Date</th>
+                                            <th>Additional Information</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                   <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="text" value="" placeholder="Placeholder" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td class="text-end">
+                                                <div class="flex flex-wrap justify-content-end">
+                                                    <span class="table_icon"><i class="fa-solid fa-xmark"></i></span>
+                                                    <span class="table_icon"><i class="fa-solid fa-check"></i></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scrum Master</td>
+                                            <td>Project Management Institute</td>
+                                            <td>Mar 25, 2024</td>
+                                            <td>Mar 25, 2027</td>
+                                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sunt.</td>
                                             <td class="text-end">
                                                 <div class="flex flex-wrap justify-content-end">
                                                     <span class="table_icon"><i class="fa-solid fa-pencil"></i></span>
@@ -149,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <!---------- Travel END ------------------>
+                <!---------- Education END ------------------>
                 <div class="card_footer">
                     <div class="footer_btn_container">
                         <button class="btn btn-secondary">Edit</button>
