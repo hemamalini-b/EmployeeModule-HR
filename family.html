@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Qwik HR</title>
+    <script src="https://kit.fontawesome.com/029e3174b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h3 class="header_title">My Space</h3>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="tabs_container">
+                <ul class="tabs_list">
+                    <li class="tab_item active">Personal</li>
+                    <li class="tab_item">Team</li>
+                    <li class="tab_item">Job</li>
+                    <li class="tab_item">Training</li>
+                    <li class="tab_item">Assets</li>
+                    <li class="tab_item">Notes</li>
+                </ul>
+                <div class="tab_customize_btn">
+                    Customize Tabs
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card">
+                <div class="card_body">
+                    <div class="card_tabs_list">
+                        <button class="btn card_tab_item"><a href="index.html">Basic Info</a></button>
+                        <button class="btn card_tab_item"><a href="contact.html">Contacts</a></button>
+                        <button class="btn card_tab_item tab_active"><a href="family.html">Family</a></button>
+                        <button class="btn card_tab_item"><a href="education.html">Education</a></button>
+                        <button class="btn card_tab_item"><a href="work_experience.html">Work Experience</a></button>
+                        <button class="btn card_tab_item"><a href="documents.html">Documents</a></button>
+                        <button class="btn card_tab_item"><a href="benefits.html">Benefits</a></button>
+                        <button class="btn card_tab_item"><a href="health_record.html">Health Record</a></button>
+                        <button class="btn card_tab_item"><a href="travel.html">Travel</a></button>
+                    </div>
+                    
+                <!---------- Family START ------------------>
+                    <div class="container">
+                        <div class="row table_responsive px-2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Relationship</th>
+                                            <th>Date of Birth</th>
+                                            <th>Education</th>
+                                            <th>Occupation</th>
+                                            <th>Dependent</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                   <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="text" value="" placeholder="Placeholder" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <div class="form-switch flex">
+                                                    <label class="form-check-label">No</label>
+                                                    <label class="form-switch mx-1">
+                                                        <input class="form-check-input" role="switch" type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-end">
+                                                <div class="flex flex-wrap justify-content-end">
+                                                    <span class="table_icon"><i class="fa-solid fa-xmark"></i></span>
+                                                    <span class="table_icon"><i class="fa-solid fa-check"></i></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mathew</td>
+                                            <td>Stephhenie</td>
+                                            <td>Father in law</td>
+                                            <td>Mar 25, 2024</td>
+                                            <td>BTech Aeronautical</td>
+                                            <td>Aircraft Engineer</td>
+                                            <td>No</td>
+                                            <td class="text-end">
+                                                <div class="flex flex-wrap justify-content-end">
+                                                    <span class="table_icon"><i class="fa-solid fa-pencil"></i></span>
+                                                    <span class="table_icon"><i class="fa-solid fa-trash-can"></i></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------- Family END ------------------>
+                <div class="card_footer">
+                    <div class="footer_btn_container">
+                        <button class="btn btn-secondary">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
