@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/assets.css">
     <title>Qwik HR</title>
     <script src="https://kit.fontawesome.com/029e3174b4.js" crossorigin="anonymous"></script>
 </head>
@@ -18,11 +19,11 @@
         <section class="container">
             <div class="tabs_container">
                 <ul class="tabs_list">
-                    <li class="tab_item active"><a href="index.html">Personal</a></li>
+                    <li class="tab_item"><a href="index.html">Personal</a></li>
                     <li class="tab_item">Team</li>
-                    <li class="tab_item"><a href="job.html">Job</a></li>
+                    <li class="tab_item">Job</li>
                     <li class="tab_item">Training</li>
-                    <li class="tab_item"><a href="assets.html">Assets</a></li>
+                    <li class="tab_item active"><a href="assets.html">Assets</a></li>
                     <li class="tab_item"><a href="notes.html">Notes</a></li>
                 </ul>
                 <div class="tab_customize_btn">
@@ -31,65 +32,76 @@
             </div>
         </section>
 
+
+        <!-- ----------- Assets START --------------- -->
+
         <section class="container">
             <div class="card">
                 <div class="card_body">
-                    <div class="card_tabs_list">
-                        <button class="btn card_tab_item"><a href="index.html">Basic Info</a></button>
-                        <button class="btn card_tab_item"><a href="contact.html">Contacts</a></button>
-                        <button class="btn card_tab_item"><a href="family.html">Family</a></button>
-                        <button class="btn card_tab_item"><a href="education.html">Education</a></button>
-                        <button class="btn card_tab_item tab_active"><a href="work_experience.html">Work Experience</a></button>
-                        <button class="btn card_tab_item"><a href="documents.html">Documents</a></button>
-                        <button class="btn card_tab_item"><a href="benefits.html">Benefits</a></button>
-                        <button class="btn card_tab_item"><a href="health_record.html">Health Record</a></button>
-                        <button class="btn card_tab_item"><a href="travel.html">Travel</a></button>
-                    </div>
-                    
-                <!---------- Work Experience START ------------------>
                     <div class="container">
                         <div class="row table_responsive px-2">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Organization <span class="sort-icon"></span></th>
-                                            <th>Location <span class="sort-icon"></span></th>
-                                            <th>Job Title <span class="sort-icon"></span></th>
-                                            <th>Start Date <span class="sort-icon"></span></th>
-                                            <th>End Date <span class="sort-icon"></span></th>
+                                            <th>Device <span class="sort-icon"></span></th>
+                                            <th>Brand Name <span class="sort-icon"></span></th>
+                                            <th>Serial Number <span class="sort-icon"></span></th>
+                                            <th>Configuration <span class="sort-icon"></span></th>
+                                            <th>Assigned On <span class="sort-icon"></span></th>
+                                            <th>Returned on <span class="sort-icon"></span></th>
+                                            <th>Status <span class="sort-icon"></span></th>
                                             <th class="text-hidden">Action</th>
+
                                         </tr>
                                     </thead>
                                    <tbody>
                                         <tr>
                                             <td>
-                                                <input type="text" value="" placeholder="Laptop" class="form-control-sm" />
+                                                <!-- <div class="form-group"> -->
+                                                    <select class="form-select-sm" placeholder="Laptop">
+                                                        <option value="">Laptop</option>
+                                                    </select>
+                                                <!-- </div> -->
                                             </td>
                                             <td>
-                                                <input type="text" value="" placeholder="Place Holder" class="form-control-sm" />
+                                                <input type="text" value="" placeholder="Dell Lattitude 34" class="form-control-sm" />
                                             </td>
                                             <td>
-                                                <input type="text" value="" placeholder="Place Holder" class="form-control-sm" />
+                                                <input type="text" value="" placeholder="1JSHY90" class="form-control-sm" />
+                                            </td>
+
+                                            <td>
+                                                <input type="text" value="" placeholder="12 GB RAM(DDR4)" class="form-control-sm" />
                                             </td>
                                             <td>
                                                 <input type="text" value="" placeholder="MM-DD-YYYY" class="form-control-sm" />
                                             </td>
                                             <td>
                                                 <input type="text" value="" placeholder="MM-DD-YYYY" class="form-control-sm" />
+                                            </td>
+                                            <td>
+                                                <!-- <div class="form-group"> -->
+                                                    <select class="form-select-sm" placeholder="status">
+                                                        <option value="">Laptop</option>
+                                                    </select>
+                                                <!-- </div> -->
                                             </td>
                                             <td class="text-end">
                                                 <span class="table_icon"><i class="fa-solid fa-xmark"></i></span>
                                                 <span class="table_icon"><i class="fa-solid fa-check"></i></span>
                                             </td>
+
                                         </tr>
                                         <tr>
-                                            <td>Working Pvt Ltd</td>
-                                            <td>Chennai</td>
-                                            <td>Senior Developer</td>
-                                            <td>Mar 25, 2024</td>
-                                            <td>Mar 25, 2024</td>
-                                            <td class="text-end">              
+                                            <td>Laptop</td>
+                                            <td>MacBook AirPro 2023</td>
+                                            <td>Mac3432X21</td>
+                                            <td>8 GB RAM (DDR3)</td>
+                                            <td>Mar 03, 2023</td>
+                                            <td>Mar 03, 2023</td>
+                                            <td>Completed</td>
+                                            <td class="text-end">
                                                 <span class="table_icon"><i class="fa-solid fa-pencil"></i></span>
                                                 <span class="table_icon"><i class="fa-solid fa-trash-can"></i></span>
                                             </td>
@@ -100,14 +112,19 @@
                         </div>
                     </div>
                 </div>
-                <!---------- Work Experience END ------------------>
-                <div class="card_footer">
-                    <div class="footer_btn_container">
-                        <button class="btn btn-secondary">Edit</button>
+
+                <!-- -------- Assets END ---------- -->
+                    <div class="card_footer">
+                        <div class="footer_btn_container">
+                            <button class="btn-outline">Cancel</button>
+                            <button class="btn btn-secondary">Save</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
+            </section>
+        </main>
+    </body>
+    </html>
+
+
+    
